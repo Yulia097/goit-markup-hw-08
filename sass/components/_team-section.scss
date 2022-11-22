@@ -1,0 +1,101 @@
+.team-section {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 94px;
+  background-color: $portfolio-button-color;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 1600px;
+  text-align: center;
+}
+
+.team-member__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.team__title {
+  color: $primary-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team-member__card {
+  width: 270px;
+  height: 428px;
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $primary-white-color;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.team-member__image {
+  width: 270px;
+}
+
+.team-member__social-media {
+  width: 260px;
+  height: 44px;
+  padding-left: 32px;
+  padding-right: 32px;
+  justify-content: space-between;
+  display: flex;
+  color: $primary-white-color;
+  align-items: center;
+}
+.team-member__social-media-links {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $primary-white-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: $icons-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $accent-color;
+    fill: $primary-white-color;
+  }
+}
+
+.team-member__description {
+  width: 270px;
+  align-items: center;
+  padding-top: 30px;
+  margin-right: 30px;
+  padding-bottom: 30px;
+}
+
+.team-member__name {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.team-member__proffesion {
+  color: $paragraph-color;
+  font-size: 16px;
+  line-height: 1.1;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 16px;
+}
