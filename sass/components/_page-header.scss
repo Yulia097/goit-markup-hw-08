@@ -1,13 +1,14 @@
 .page-header {
   border-bottom: 1px solid #ececec;
   background-color: $primary-white-color;
+  position: relative;
 }
 
-// .site-nav {
-//   display: flex;
-//   align-items: center;
-//   padding-left: 0px;
-// }
+.site-nav {
+  //   display: flex;
+  //   align-items: center;
+  //   padding-left: 0px;
+}
 .site-nav__link {
   color: $primary-text-color;
   font-weight: 500;
@@ -51,6 +52,42 @@
   color: $primary-text-color;
   margin: bottom 20px;
   font-style: inherit;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+
+  background-color: transparent;
+
+  .icon-cross {
+    display: none;
+  }
+}
+.menu-button.is-open {
+  .icon-cross {
+    display: block;
+  }
+  .icon-burger-menu {
+    display: none;
+  }
+}
+.page-header__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 480px;
+  height: 796px;
+  background-color: $primary-white-color;
+  padding-left: 40px;
+  padding-right: 83px;
+  padding-top: 48px;
+
+  &.is-open {
+    display: block;
+  }
 }
 .site-nav__current-link {
   color: $accent-color;

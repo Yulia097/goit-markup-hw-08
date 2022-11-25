@@ -51,6 +51,7 @@ ul {
 .page-header {
   border-bottom: 1px solid #ececec;
   background-color: #ffffff;
+  position: relative;
 }
 
 .site-nav__link {
@@ -92,6 +93,39 @@ ul {
   color: #212121;
   margin: bottom 20px;
   font-style: inherit;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+}
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.is-open .icon-burger-menu {
+  display: none;
+}
+
+.page-header__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 480px;
+  height: 796px;
+  background-color: #ffffff;
+  padding-left: 40px;
+  padding-right: 83px;
+  padding-top: 48px;
+}
+.page-header__menu.is-open {
+  display: block;
 }
 
 .site-nav__current-link {
