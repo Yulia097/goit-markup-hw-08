@@ -17,60 +17,77 @@
 <body>
   <header class="page-header">
     <div class="container">
-      <nav class="site-nav">
+      <nav class="header__nav">
         <a class="logo" href="./index.html">Web<span class="logo__label-black">Studio
           </span>
         </a>
-        <button type="button" class="menu-button is-open" data-menu-button>
+        <button type="button" class="menu-button " data-menu-button>
           <svg width="24" height="16" aria-label="menu switch" aria-expanded="false" aria-controls="page-header__menu">
-            <use class="icon-cross" href="./images/sprite.svg#closeModalBtn"></use>
             <use class="icon-burger-menu" href="./images/sprite.svg#burger-menu"></use>
+            <use class="icon-cross" width="19px" height="19px" href="./images/sprite.svg#closeModalBtn1"></use>
           </svg>
         </button>
         <div class="page-header__menu" id="page-header__menu" data-menu>
-        </div>
-        <ul class="site-nav__list">
-          <li class="site-nav__item">
-            <a class="site-nav__current-link" href="./index.html">
-              Studio
-            </a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="portfolio.html">
-              Portfolio
-            </a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="">
-              Contacts
-            </a>
-          </li>
-        </ul>
-        <ul class="header__list">
-          <li class="header__item">
-            <a class="header__link" href="mailto:info@devstudio.com">
-              <svg class="header__icon header__icon--icon-envelope" width="16px" height="12px">
-                <use href="./images/sprite.svg#icon-envelope">
-                </use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="tel:+380961111111">
-              <svg class="header__icon header__icon--icon-smartphone" width="10px" height="16px">
-                <use href="./images/sprite.svg#icon-smartphone">
-                </use>
-              </svg>
-              +380961111111
-            </a>
-          </li>
-        </ul>
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__current-link" href="./index.html">
+                Studio
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="portfolio.html">
+                Portfolio
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">
+                Contacts
+              </a>
+            </li>
+          </ul>
+          <div class="contacts__list">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link header__link--telephone" href="tel:+38 096 111 11 11">
+                  <svg class="header__icon header__icon--icon-smartphone" width="10px" height="16px">
+                    <use href="./images/sprite.svg#icon-smartphone">
+                    </use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link header__link--email" href="mailto:info@devstudio.com">
+                  <svg class="header__icon header__icon--icon-envelope" width="16px" height="12px">
+                    <use href="./images/sprite.svg#icon-envelope">
+                    </use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-social-media">
+            <ul class="menu-social-media__list">
+              <li class="media__item">
+                <a class="media__name">Instagram</a>
+              </li>
+              <li class="media__item">
+                <a class="media__name">Twitter</a>
+              </li>
+              <li class="media__item">
+                <a class="media__name">Facebook</a>
+              </li>
+              <li class="media__item">
+                <a class="media__name">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
       </nav>
     </div>
   </header>
   <main>
-    <section class="hero-section">
+    <section class=" hero-section">
       <h1 class="hero__title">
         EFFECTIVE SOLUTIONS FOR YOUR BUSINESS
       </h1>
@@ -338,7 +355,7 @@
           Постійні клієнти
         </h2>
         <ul class="clients__logo-list">
-          <li>
+          <li class="clients__item">
             <a class="clients__logo-link" href="">
               <svg class="clients__logo-icon" width="41px" height="46.7px">
                 <use href="./images/sprite.svg#logo-1">
@@ -346,7 +363,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="clients__item">
             <a class="clients__logo-link" href="">
               <svg class="clients__logo-icon" width="40px" height="52px">
                 <use href="./images/sprite.svg#logo-2">
@@ -354,7 +371,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="clients__item">
             <a class="clients__logo-link" href="">
               <svg class="clients__logo-icon" width="43.46px" height="41.18px">
                 <use href="./images/sprite.svg#logo-3">
@@ -362,7 +379,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="clients__item">
             <a class="clients__logo-link" href="">
               <svg class="clients__logo-icon" width="84.44px" height="40.62px">
                 <use href="./images/sprite.svg#logo-4">
@@ -370,7 +387,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="clients__item">
             <a class="clients__logo-link" href="">
               <svg class="clients__logo-icon" width="62.54px" height="45.43px">
                 <use href="./images/sprite.svg#logo-5">
@@ -378,7 +395,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="clients__item">
             <a class="clients__logo-link" href="">
               <svg class="clients__logo-icon" width="93.79px" height="43.93px">
                 <use href="./images/sprite.svg#logo-6">
@@ -539,7 +556,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
-  <script src="./css/menu.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

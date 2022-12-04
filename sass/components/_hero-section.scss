@@ -1,7 +1,8 @@
 .hero-section {
-  padding-top: 200px;
-  // height: 600px;
-  // min-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  height: 400px;
+  max-width: 1600px;
   margin-left: auto;
   text-align: center;
   margin-right: auto;
@@ -15,6 +16,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
+  }
 }
 
 .hero__title {
@@ -22,9 +31,20 @@
   margin-bottom: 30px;
   color: $primary-white-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1, 6;
+
+  text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1, 4;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
 }
 .hero__button {
   background-color: $accent-color;
@@ -33,10 +53,20 @@
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
+
+  letter-spacing: 0.06em;
   cursor: pointer;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
   border: 0px;
-  width: 216px;
+  width: 200px;
+  height: 50px;
+
+  @media screen and (min-width: 1200px) {
+    width: 216px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1, 8;
+    letter-spacing: 0.06em;
+  }
 }
