@@ -2,6 +2,11 @@
   background-color: $secondary-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
   @media screen and (max-width: 767px) {
     width: 480px;
   }
@@ -11,13 +16,12 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 1600px;
+    height: 252px;
   }
 }
 
 .footer-content {
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 
@@ -26,17 +30,24 @@
     flex-wrap: wrap;
     align-items: center;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 1200px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
 }
 .logo__footer-logo {
+  text-align: center;
   @media screen and (max-width: 767px) {
     margin-left: 163px;
-    text-align: center;
+
     margin-bottom: 20px;
-    text-align: center;
   }
 
   @media screen and (min-width: 768px) {
-    text-align: center;
     width: 768px;
   }
 }
@@ -44,8 +55,6 @@
   text-align: center;
   color: $primary-white-color;
   text-transform: uppercase;
-  // width: 116px;
-  // height: 16px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -60,6 +69,10 @@
     height: 80px;
     margin-left: 165px;
     margin-bottom: 102px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
   }
 }
 
@@ -129,7 +142,7 @@
   color: $primary-white-color;
   padding-left: 0px;
   @media screen and (max-width: 767px) {
-    text-align: center;
+    text-align: left;
   }
 
   @media screen and (min-width: 768px) {
@@ -137,6 +150,13 @@
     display: inline-block;
     text-align: center;
     margin-left: 61px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+    text-align: left;
+    padding-left: 0px;
+    margin-right: 70px;
   }
 }
 .adress {
@@ -156,6 +176,11 @@
   }
   display: inline-block;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    padding-left: 0px;
+  }
 }
 
 .logo__label-white {
@@ -170,6 +195,11 @@
   @media screen and (min-width: 768px) {
     margin-left: 151px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    display: flex;
+  }
 }
 
 .subsribe__title {
@@ -182,6 +212,10 @@
   margin-bottom: 20px;
 
   color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .subsribe__input {
   display: block;
@@ -198,6 +232,11 @@
   transition: outline-color $accent-color;
   margin-bottom: 20px;
   padding-left: 15px;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+  }
 }
 
 .subsribe__input:focus-visible {
@@ -235,6 +274,10 @@
   &:hover {
     background-color: #188ce8;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 .subsribe__svg {
   margin-left: 10px;
@@ -244,11 +287,29 @@
   margin-bottom: 60px;
   @media screen and (max-width: 767px) {
     padding-left: 0px;
+    text-align: center;
   }
 
   @media screen and (min-width: 768px) {
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0px;
+  }
+}
+
+.subscribe__section {
+  display: flex;
+  text-align: top;
+
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
   }
 }

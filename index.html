@@ -22,9 +22,10 @@
           </span>
         </a>
         <button type="button" class="menu-button " data-menu-button>
-          <svg width="24" height="16" aria-label="menu switch" aria-expanded="false" aria-controls="page-header__menu">
+          <svg class="img__icon-cross" width="24" height="16" aria-label="menu switch" aria-expanded="false"
+            aria-controls="page-header__menu">
             <use class="icon-burger-menu" href="./images/sprite.svg#burger-menu"></use>
-            <use class="icon-cross" width="19px" height="19px" href="./images/sprite.svg#closeModalBtn1"></use>
+            <use class="icon-cross" href="./images/sprite.svg#closeModalBtn1"></use>
           </svg>
         </button>
         <div class="page-header__menu" id="page-header__menu" data-menu>
@@ -48,7 +49,7 @@
           <div class="contacts__list">
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__link header__link--telephone" href="tel:+38 096 111 11 11">
+                <a class="header__link header__link--telephone" href="tel:+380961111111">
                   <svg class="header__icon header__icon--icon-smartphone" width="10px" height="16px">
                     <use href="./images/sprite.svg#icon-smartphone">
                     </use>
@@ -160,37 +161,47 @@
       </ul>
     </section>
     <section class="service-section">
-      <div class="container">
-        <h2 class="service__title">
-          What we do
-        </h2>
-        <ul class="service__list">
-          <li class="service__item">
+
+      <h2 class="service__title">
+        What we do
+      </h2>
+      <ul class="service__list">
+        <li class="service__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./images/2x 1.jpg 2x" />
             <img class="service__image" src="./images/img1.jpg" alt="Keyboard" width="370" />
             <div class="service__image-overlay">
               <p class="service__image-text">
                 Десктопні додатки
               </p>
             </div>
-          </li>
-          <li class="service__item">
+          </picture>
+        </li>
+        <li class="service__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./images/2x 2.jpg 2x" />
             <img class="service__image" src=" ./images/img2.jpg" alt="Laptop" width="370" />
             <div class="service__image-overlay">
               <p class="service__image-text">
                 Мобільні додатки
               </p>
             </div>
-          </li>
-          <li class="service__item">
+          </picture>
+        </li>
+        <li class="service__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./images/2x 3.jpg 2x" />
             <img class="service__image" src=" ./images/img3.jpg" alt="Tablet" width="370" />
-            <div class="service__image-overlay">
-              <p class="service__image-text">
-                Дизайнерські рішення
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
+          </picture>
+          <div class="service__image-overlay">
+            <p class="service__image-text">
+              Дизайнерські рішення
+            </p>
+          </div>
+
+        </li>
+      </ul>
+
     </section>
     <section class="team-section">
       <div class="container">
@@ -199,7 +210,15 @@
         </h2>
         <ul class="team-member__list">
           <li class="team-member__card">
-            <img class="team-member__image" src="./images/img4.jpg" alt="Igor" width="270" />
+            <picture>
+
+              <source media="(max-width: 767px)" srcset="./images/img@2x.jpg">
+              <source media="(min-width: 768px)"
+                srcset="./images/igor tablet 1x.jpg   1x, ./images/igor tablet 2x.jpg 2x">
+              <source media="(min-width: 1200px)" srcset="./images/img4.jpg   1x, ./images/igor desktop 2x.jpg">
+              <img class=" team-member__image" src="./images/portret 1x igor.jpg" alt="Igor" />
+            </picture>
+
             <div class="team-member__description">
               <h3 class="team-member__name" lang="ru">
                 Игорь Демьяненко
@@ -207,6 +226,7 @@
               <p class="team-member__proffesion">
                 Product Designer
               </p>
+
               <div class="team-member__social-media">
                 <a class="team-member__social-media-links" href="">
                   <svg width="20px" height="20px">
@@ -236,7 +256,13 @@
             </div>
           </li>
           <li class="team-member__card">
-            <img class="team-member__image" src="./images/img5.jpg" alt="Olga" width="270" />
+            <picture>
+              <source media="(max-width: 767px)" srcset="./images/img-portret-450.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./images/olga 1x tablet.jpg    1x, ./images/olga 2x tablet.jpg 2x" />
+              <source media="(min-width: 1200px)" srcset="./images/img5.jpg 1x, ./images/olga desktop 2x.jpg 2x" />
+              <img class="team-member__image" src="./images/olga 1 x mob.jpg" alt="Olga" />
+            </picture>
             <div class="team-member__description">
               <h3 class="team-member__name" lang="ru">
                 Ольга Репина
@@ -244,6 +270,7 @@
               <p class="team-member__proffesion">
                 Frontend Developer
               </p>
+
               <div class="team-member__social-media">
                 <a class="team-member__social-media-links" href="">
                   <svg width="20px" height="20px">
@@ -273,7 +300,14 @@
             </div>
           </li>
           <li class="team-member__card">
-            <img class="team-member__image" src="./images/img6.jpg" alt="Nicolay" width="270" />
+            <picture>
+              <source media="(max-width: 767px)" srcset="./images/portret-450-2x-3.jpg" />
+              <source media="(min-width: 768px)" srcset="./images/nicolay 1x tablet.jpg   1x, 
+              ./images/nicolay tablet 2x.jpg 2x" />
+              <source media="(min-width: 1200px)"
+                srcset="./images/img6.jpg  1x, ./images/nicolay 2x desktop 2x.jpg 2x" />
+              <img class="team-member__image" src="./images/portret - 1x - nicolay.jpg" alt="Nicolay" />
+            </picture>
             <div class="team-member__description">
               <h3 class="team-member__name" lang="ru">
                 Николай Тарасов
@@ -310,7 +344,13 @@
             </div>
           </li>
           <li class="team-member__card">
-            <img class="team-member__image" src="./images/img7.jpg" alt="Michale" width="270" />
+            <picture>
+              <source media="(max-width: 767px)" srcset="./images/portret-450-2x-4.jpg" />
+              <source media="(min-width: 768px)"
+                srcset="./images/micolay tablet 1x.jpg  1x, ./images/micolay tablet 2x.jpg 2x" />
+              <source media="(min-width: 1200px)" srcset="./images/img7.jpg  1x,./images/micolay desktop 2x.jpg 2x" />
+              <img class="team-member__image" src="./images/portret - 1x - michael.jpg" alt="Michale" />
+            </picture>
             <div class="team-member__description">
               <h3 class="team-member__name" lang="ru">
                 Михаил Ермаков
